@@ -1,0 +1,111 @@
+@import 'attr.scss';
+
+// PLACEHOLDERS
+
+%text_align {
+	text-align: left;
+
+	@media only screen and (max-width: $screen-sm-min) {
+		text-align: center;
+	}
+}
+
+// CSS
+
+.header {
+	background-color: $blue;
+	padding: 10px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
+	@media only screen and (max-width: $screen-sm-min) {
+		position: static;
+		padding: 30px;
+	}
+}
+
+.header__logo {
+	display: inline-block;
+	float: left;
+
+	@media only screen and (max-width: $screen-sm-min) {
+		float: none;
+	}
+}
+
+.header__logo__img {
+	float: left;
+	cursor: pointer;
+	width: 100px;
+	height: auto;
+}
+
+.header__logo__txt {
+	color: $lightblue;
+	padding: 20px;
+	float: left;
+	text-align: left;
+	font-family: $varela-round;
+}
+
+.header__menu {
+	float: right;
+
+	@media only screen and (max-width: $screen-sm-min) {
+		width: 100%;
+	}
+}
+
+.header__menu__item {
+	color: $white;
+	width: auto;
+	float: left;
+	padding: 20px;
+	@extend %text_align;
+	cursor: pointer;
+
+	@media only screen and (max-width: $screen-sm-min) {
+		float: none;
+		display: inline-block;
+	}
+
+	@media only screen and (max-width: 350px) {
+		float: left;
+	}
+}
+
+.header__menu__item:hover {
+	color: $lightorange;
+	@extend %a;
+	@include text-shadow($lightorange);
+}
+
+.header__menu__item:focus {
+	color: $lightorange;
+	@extend %a;
+	@include text-shadow($lightorange);
+}
+
+.header__menu__item:active {
+	color: $darkblue;
+	@extend %a;
+	@include text-shadow($darkblue);
+}
+
+.header__to-top {
+	display: none;
+	width: 71px;
+	height: 71px;
+
+	@media only screen and (max-width: $screen-sm-min) {
+		display: block;
+		position:fixed;
+		bottom:2%;
+		right:5%;
+		cursor:pointer;
+		z-index:1;
+	}
+}

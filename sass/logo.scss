@@ -1,0 +1,124 @@
+.logo--fundos__bloco {
+	margin-bottom: 30px;
+}
+
+.logo--fundos__bloco--logo {
+	width: 75% !important;
+	height: auto !important;
+	margin-left: 13%;
+	margin-top: 20%;
+}
+
+.logo--fundos__bloco--overlay {
+	z-index: 1;
+	margin-left: 75%;
+	margin-top: 5%;
+
+	@media only screen and (max-width: 1170px) {
+		margin-left: 72%;
+		margin-top: 2%;
+	}
+
+	@media only screen and (max-width: $screen-md-min) {
+		margin-left: 80%;
+		margin-top: 10%;
+	}
+
+	@media only screen and (max-width: $screen-sm-min) {
+		margin-left: 90%;
+		margin-top: 20%;
+	}
+
+	@media only screen and (max-width: 660px) {
+		margin-left: 85%;
+		margin-top: 15%;
+	}
+
+	@media only screen and (max-width: $screen-xs-max) {
+		margin-left: 75%;
+		margin-top: 5%;
+	}
+}
+
+#logo--fundos--corretos, #logo--fundos--incorretos {
+	.lightblue { background-color: $lightblue; }
+	.blue { background-color: $blue; }
+	.darkblue { background-color: $darkblue; }
+	.lightorange { background-color: $lightorange; }
+	.orange { background-color: $orange; }
+	.darkorange { background-color: $darkorange; }
+	.red { background-color: $red; }
+	.purple { background-color: $purple; }
+	.pink { background-color: $pink; }
+	.yellow { background-color: $yellow; }
+	.lightyellow { background-color: $lightyellow; }
+	.white { background-color: $white; border: solid 2px #ddd; }
+	.lightgrey { background-color: $lightgrey; }
+	.grey { background-color: $grey; }
+	.darkgrey { background-color: $darkgrey; }
+	.black { background-color: $black; }
+}
+
+.logo--specs, .logo--specs--last {
+	@media only screen and (max-width: $screen-sm-min) {
+		text-align: center;
+		padding-bottom: 20px;
+		margin: 30px 20px;
+	}
+}
+
+.logo--specs {
+	@media only screen and (max-width: $screen-sm-min) {
+		border-bottom: solid 1px $lightgrey;
+	}
+}
+
+.logo--specs--tamanho {
+	height:120px;
+	width:170px;
+	border:solid 2px #eee;
+	margin-bottom:20px;
+	background-image: url('../img/x.svg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+
+	@media only screen and (max-width: $screen-sm-min) {
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+%logo--specs--tamanho__img {
+	height:auto;
+	display: inline-block;
+}
+
+.logo--specs--tamanho__img--byline {
+	@extend %logo--specs--tamanho__img;
+	width: 120px;
+	margin-left: 23px;
+	margin-top: 15px;
+
+	@media only screen and (max-width: $screen-sm-min) {
+		margin-left: 5px;
+	}
+}
+
+.logo--specs--tamanho__img--simples {
+	@extend %logo--specs--tamanho__img;
+	width: 35px;
+	margin-left: 65px;
+	margin-top: 45px;
+
+	@media only screen and (max-width: $screen-sm-min) {
+		margin-left: 0;
+	}
+}
+
+.logo--specs--margem--img {
+	//border:solid 20px $lightyellow;
+	//width:160px;
+	//height:auto;
+	margin: 10px auto 20px;
+}

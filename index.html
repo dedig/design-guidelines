@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<title>Dedig | Guidelines</title>
+
+	<script type="text/javascript" src="local/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="local/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="local/bootstrap.min.css">
+	<link rel='stylesheet' type='text/css' href='local/varela.css'>
+	<link rel='stylesheet' type='text/css' href='local/open-sans.css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/x-icon" href="img/logo-favicon.ico">
+</head>
+<body>
+<header class="header container-fluid">
+	<div class="row">
+		<div class="col-md-4 header__logo">
+				<img onclick="window.scrollTo(0,0)" class="header__logo__img" src="img/dedig-logo_rgb.png" alt="logo" title="ir para o topo">
+				<p class="header__logo__txt">Guidelines</p>
+		</div>
+		<div class="col-md-8">
+			<nav class="header__menu">
+				<p onclick="goto('article--cores')" class="header__menu__item">Cores</p>
+				<p onclick="goto('article--fontes')" class="header__menu__item">Fontes</p>
+				<p onclick="goto('article--logo')" class="header__menu__item">Logo</p>
+				<!-- <p onclick="goto('article--gui')" class="header__menu__item">GUI</p>
+				<p onclick="goto('article--web')" class="header__menu__item">Web</p> -->
+			</nav>
+		</div>
+	</div>
+	<img onclick="window.scrollTo(0,0)" class="header__to-top" src="img/to-top.svg" alt="to top">
+</header>
+<article class="article--first container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1 class="article__title">Dedig Guidelines</h1>
+		</div>
+		<div class="col-sm-12">
+			<div class="article__subtitle">
+				<h2 class="article__subtitle--txt">Sobre</h2>
+				<div class="article__subtitle--arrow" id="sobre__arrow" onclick="showhide('sobre')"></div>
+			</div>
+		</div>
+		<div class="article__subcontent" id="sobre">
+			<div class="col-sm-12">
+				<p>Guia de estilos para uso de cores, fontes, do logo e elementos gráficos da marca Dedig.</p>
+			</div>
+		</div>
+	</div>
+</article>
+<article id="article--cores" class="article container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1 class="article__title">Cores</h1>
+		</div>
+		<div class="col-sm-12 quick-buttons">
+		</div>
+		<div class="col-sm-12">
+			<div class="article__subtitle">
+				<h2 class="article__subtitle--txt">Amostras</h2>
+				<div class="article__subtitle--arrow" id="amostras__arrow" onclick="showhide('amostras')"></div>
+			</div>
+		</div>
+	</div>
+	<div class="article__subcontent" id="amostras">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="col-md-4 col-sm-6">
+					<div class="lightblue row"></div>
+					<div class="blue row"></div>
+					<div class="darkblue row"></div>
+					<div class="purple row"></div>
+					<div class="lightpink row"></div>
+					<div class="pink row"></div>
+					<div class="lightorange row"></div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="orange row"></div>
+					<div class="darkorange row"></div>
+					<div class="red row"></div>
+					<div class="green row"></div>
+					<div class="darkgreen row"></div>
+					<div class="yellow row"></div>
+					<div class="lightyellow row"></div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="white row"></div>
+					<div class="lightgrey row"></div>
+					<div class="grey row"></div>
+					<div class="darkgrey row"></div>
+					<div class="black row"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="article__subtitle">
+				<h2 class="article__subtitle--txt">Paletas para download</h2>
+				<div class="article__subtitle--arrow" id="paletas-download__arrow" onclick="showhide('paletas-download')"></div>
+			</div>
+		</div>
+		<div class="article__subcontent" id="paletas-download">
+			<div class="col-sm-3">
+				<p>Baixar paleta de cores em RGB para o <i>Photoshop</i>.</p>
+				<a href="download/cores/dedig-rgb-photoshop.aco" download="Dedig - Paleta RGB para Photoshop.aco">
+					<button>RGB Photoshop</button>
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<p>Baixar paleta de cores em CMYK para o <i>Photoshop</i>.</p>
+				<a href="download/cores/dedig-cmyk-photoshop.aco" download="Dedig - Paleta CMYK para Photoshop.aco">
+					<button>CMYK Photoshop</button>
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<p>Baixar paleta de cores em RGB para o <i>Illustrator</i>.</p>
+				<a href="download/cores/dedig-rgb-illustrator.ase" download="Dedig - Paleta RGB para Illustrator.ase">
+					<button>RGB Illustrator</button>
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<p>Baixar paleta de cores em CMYK para o <i>Illustrator</i>.</p>
+				<a href="download/cores/dedig-cmyk-illustrator.ase" download="Dedig - Paleta CMYK para Illustrator.ase">
+					<button>CMYK Illustrator</button>
+				</a>
+			</div>
+		</div>
+	</div>
+</article>
+<article id="article--fontes" class="article container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1 class="article__title">Fontes</h1>
+		</div>
+		<div class="col-sm-12 quick-buttons">
+		</div>
+		<div class="col-sm-12">
+			<div class="article__subtitle">
+				<h2 class="article__subtitle--txt">Famílias</h2>
+				<div class="article__subtitle--arrow" id="familias__arrow" onclick="showhide('familias')"></div>
+			</div>
+		</div>
+		<div class="article__subcontent" id="familias">
+		<div class="col-sm-12">
+				<div class="fontes">
+					<h1 class="fontes__title--nulshock-bold">Nulshock Bold</h1>
+					<p>Deve ser usada em títulos com destaque.</p>
+					<p>Autor: Raymond Larabie - Typodermic Fonts Inc. [<a href="download/fontes/nulshock-bold-nota-autor.txt" target="_blank">Nota do autor</a>]</p>
+					<p>Licença: <a href="download/fontes/typodermic-eula-02-2014.pdf" target="_blank">Typodermic Fonts Inc. EULA</a></p>
+					<br/><p>Usando como <strong>webfont</strong>:</p>
+					<pre class="fontes__webfont--nulshock-bold"></pre>
+					<a href="download/fontes/nulshock bd.ttf" download="nulshock db.ttf"><button>Donwload <i>.ttf</i></button></a>
+					<a href="fonts/nulshock-bd.woff2" download="nulshock-db.woff2"><button>Donwload <i>.woff2</i></button></a>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<div class="fontes">
+					<h1 class="fontes__title--varela-round">Varela Round</h1>
+					<p>Deve ser usada em subtítulos, e textos pequenos.</p>
+					<p>Autor: <a href="https://plus.google.com/115540960342941034012/about" target="_blank">Joe Prince</a></p>
+					<p>Licença: <a href="download/fontes/varela-round-license.txt" target="_blank">SIL Open Font License, 1.1</a></p>
+					<br/><p>Usando como <strong>webfont</strong>:</p>
+					<pre class="fontes__webfont--varela-round"></pre>
+					<a href="download/fontes/VarelaRound-Regular.ttf" download="VarelaRound-Regular.ttf"><button>Donwload <i>.ttf</i></button></a>
+					<a href="download/fontes/varela-round.woff2" download="varela-round.woff2"><button>Donwload <i>.woff2</i></button></a>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<div class="fontes--last">
+					<h1 class="fontes__title--open-sans">Open Sans Regular</h1>
+					<p>Deve ser usada em parágrafos.</p>
+					<p>Autor: <a href="https://profiles.google.com/107777320916704234605/about" target="_blank">Steve Matteson</a></p>
+					<p>Licença: <a href="download/fontes/open-sans-license.txt" target="_blank">Apache License, version 2.0</a></p>
+					<br/><p>Usando como <strong>webfont</strong>:</p>
+					<pre class="fontes__webfont--open-sans"></pre>
+					<a href="download/fontes/OpenSans-Regular.ttf" download="OpenSans-Regular.ttf"><button>Donwload <i>.ttf</i></button></a>
+					<a href="download/fontes/open-sans.woff2" download="opens-sans.woff2"><button>Donwload <i>.woff2</i></button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+<article id="article--logo" class="article container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1 class="article__title">Logo</h1>
+		</div>
+		<div class="col-sm-12 quick-buttons">
+		</div>
+		<div class="col-sm-12">
+			<div class="article__subtitle">
+				<h2 class="article__subtitle--txt">Versões</h2>
+				<div class="article__subtitle--arrow" id="versoes__arrow" onclick="showhide('versoes')"></div>
+			</div>
+		</div>
+	</div>
+	<div class="article__subcontent" id="versoes">
+		<div class="row">
+			<div class="col-md-6">
+				<p class="article__txt--center"><strong>Versão com <i>byline</i></strong></p>
+				<img class="article__img--too-big" src="img/dedig-logo_rgb_byline.png">
+				<p class="article__txt--md-center">A versão com o <i>byline</i> é a preferencial, só deve ser substituída no caso das limitações descritas.</p>
+			</div>
+			<div class="col-md-6">
+				<p class="article__txt--center"><strong>Versão simplificada</strong></p>
+				<img class="article__img--too-big" src="img/dedig-logo_rgb.png">
+				<p class="article__txt--md-center">Usada em casos da leitura estar prejudicada. Como em dimensões reduzidas ou impressões com menor resolução.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<p class="article__txt--center"><strong>Versão de uma cor</strong></p>
+				<img class="article__img--too-big" src="img/dedig-logo_pb_byline.png">
+				<p class="article__txt--md-center">Para impressão em mídias limitadas a uma cor, caso não exista a limitação não usar essa versão.</p>
+			</div>
+			<div class="col-md-6">
+				<p class="article__txt--center"><strong>Versão <i>outiline</i></strong></p>
+				<img class="article__img--too-big" src="img/dedig-logo_outline.png">
+				<p class="article__txt--md-center--last">Uso restrito para mídias onde o preenchimento deve ser evitado, caso não exista essa necessidade usar as outras versões.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="article__subtitle">
+				<h2 class="article__subtitle--txt">Fundos</h2>
+				<div class="article__subtitle--arrow" id="fundos__arrow" onclick="showhide('fundos')"></div>
+			</div>
+		</div>
+	</div>
+	<div class="article__subcontent" id="fundos">
+		<div class="row">
+			<div class="col-sm-12">
+				<p><strong>Fundos aceitáveis</strong></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12" id="logo--fundos--corretos">
+				<div class="col-md-3 col-sm-6">
+					<div class="logo--fundos__bloco blue"></div>
+					<div class="logo--fundos__bloco white"></div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="logo--fundos__bloco darkblue"></div>
+					<div class="logo--fundos__bloco darkgrey"></div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="logo--fundos__bloco black"></div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="logo--fundos__bloco lightyellow"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<p><strong>Fundos incompatíveis</strong></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12" id="logo--fundos--incorretos">
+				<div class="col-md-3 col-sm-6">
+					<div class="logo--fundos__bloco orange"></div>
+					<div class="logo--fundos__bloco darkorange"></div>
+					<div class="logo--fundos__bloco lightgrey"></div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="logo--fundos__bloco yellow"></div>
+					<div class="logo--fundos__bloco red"></div>
+					<div class="logo--fundos__bloco purple"></div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="logo--fundos__bloco lightblue"></div>
+					<div class="logo--fundos__bloco pink"></div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="logo--fundos__bloco lightorange"></div>
+					<div class="logo--fundos__bloco grey"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="article__subtitle">
+				<h2 class="article__subtitle--txt">Especificações</h2>
+				<div class="article__subtitle--arrow" id="especificacoes__arrow" onclick="showhide('especificacoes')"></div>
+			</div>
+		</div>
+		<div class="article__subcontent" id="especificacoes">
+			<div class="col-sm-4 logo--specs">
+				<p><strong>Tamanho mínimo com <i>byline</i></strong></p>
+				<div class="logo--specs--tamanho"><img src="img/dedig-logo_rgb_byline.png" class="logo--specs--tamanho__img--byline"></div>
+				<p>Impresso: 250 x 165 mm<br/>Digital: 120 x 80 px</p>
+			</div>
+			<div class="col-sm-4 logo--specs">
+				<p><strong>Tamanho mínimo sem <i>byline</i></strong></p>
+				<div class="logo--specs--tamanho"><img src="img/dedig-logo_rgb.png" class="logo--specs--tamanho__img--simples"></div>
+				<p>Impresso: 100 x 59 mm<br/>Digital: 35 x 21 px</p>
+			</div>
+			<div class="col-sm-4 logo--specs--last">
+				<p><strong>Medida para margem</strong></p>
+				<img src="img/dedig-logo_rgb_byline_margem.jpg" class="logo--specs--margem--img">
+				<p>A margem deve ter largura da primeira letra "D", a margem deve ter a mesma espessura horizontalmente e verticalmente.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="article__subtitle">
+				<h2 class="article__subtitle--txt">Downloads do logo</h2>
+				<div class="article__subtitle--arrow" id="downloads-logo__arrow" onclick="showhide('downloads-logo')"></div>
+			</div>
+		</div>
+	</div>
+	<div class="article__subcontent" id="downloads-logo">
+		<div class="row">
+			<div class="col-sm-12"><p>Todas as versões do logo em diferentes extensões de arquivo:</p></div>
+			<div class="col-sm-12">
+				<a href="download/logo/dedig-logo-ai.zip" download="Dedig-logo-versoes-ai.zip"><button>Download <i>.ai</i></button></a>
+				<a href="download/logo/dedig-logo-eps.zip" download="Dedig-logo-versoes-eps.zip"><button>Download <i>.eps</i></button></a>
+				<a href="download/logo/dedig-logo-svg.zip" download="Dedig-logo-versoes-svg.zip"><button>Download <i>.svg</i></button></a>
+				<a href="download/logo/dedig-logo-png.zip" download="Dedig-logo-versoes-png.zip"><button>Download <i>.png</i></button></a>
+			</div>
+		</div>
+	</div>
+</article>
+<div style="height:50px;"></div>
+<script type="text/javascript" src="js/functions.js"></script>
+</body>
+</html>
