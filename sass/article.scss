@@ -7,10 +7,12 @@
 .article {
 	@extend %article;
 	margin-top: 150px;
+	padding-top: 98px;
 
 
 	@media only screen and (max-width: $screen-sm-min) {
 		margin-top: 100px;
+		padding-top: 0;
 	}
 }
 
@@ -34,6 +36,7 @@
 	height: auto;
 	margin-top: 20px;
 	margin-bottom: 30px;
+	padding-top: 15px;
 }
 
 .article__subtitle--txt {

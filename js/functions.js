@@ -5,12 +5,15 @@ function quickBtns(parent) {
 	this.articles = this.parent.querySelectorAll('.article__subtitle');
 	this.labels = this.parent.querySelectorAll('.article__subtitle--txt');
 	this.buttonContainer = this.parent.querySelectorAll('.quick-buttons');
+	//this.articleSubContents = this.parent.querySelectorAll('.article__subcontent');
 	this.buttons = "";
 
 	for (var i = 0; i < this.labels.length; i++) {
 		var t = this.labels[i].outerText;
-		var rect = this.articles[i].getBoundingClientRect();
-		this.buttons += "<button class='quick-buttons__button' onclick='scrollTo(0," + rect.top + ")'>" + t + "</button>";
+		//var rect = this.articles[i].getBoundingClientRect();
+		//this.buttons += "<button class='quick-buttons__button' onclick='scrollTo(0," + rect.top + ")'>" + t + "</button>";
+		this.buttons += "<a href='#" + this.articles[i].id + "'><button class='quick-buttons__button'>" + t + "</button></a>";
+		// onclick='scrollTo(0," + String(window.pageYOffset - 200) + ");'
 	}
 
 	this.buttonContainer[0].innerHTML = this.buttons;
@@ -69,16 +72,6 @@ function showhide(id) {
 }
 
 // One page navigation -----------------------------------------------------------------------//
-
-function goto(el) {
-	var w = window.innerWidth;
-
-	if (w >= 768)
-		window.scrollTo(0, document.getElementById(el).offsetTop - 100);
-
-	else
-		window.scrollTo(0, document.getElementById(el).offsetTop);
-}
 
 function activePage () {
 	var sessoes = document.querySelectorAll(".article");
