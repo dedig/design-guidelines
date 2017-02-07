@@ -1,0 +1,15 @@
+---
+---
+
+@import 'attr';
+@import 'fonts';
+@import 'button';
+@import 'reset';
+@import 'menu';
+@import 'article';
+@import 'colors';
+@import 'fontes';
+@import 'logo';
+@import 'gui';
+
+{% include colors/squares.scss %}

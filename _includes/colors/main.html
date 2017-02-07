@@ -14,33 +14,13 @@
 	</div>
 	<div class="article__subcontent" id="amostras">
 		<div class="row">
-			<div class="col-sm-12">
-				<div class="col-md-4 col-sm-6">
-					<div class="lightblue row"></div>
-					<div class="blue row"></div>
-					<div class="darkblue row"></div>
-					<div class="purple row"></div>
-					<div class="lightpink row"></div>
-					<div class="pink row"></div>
-					<div class="lightorange row"></div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="orange row"></div>
-					<div class="darkorange row"></div>
-					<div class="red row"></div>
-					<div class="green row"></div>
-					<div class="darkgreen row"></div>
-					<div class="yellow row"></div>
-					<div class="lightyellow row"></div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="white row"></div>
-					<div class="lightgrey row"></div>
-					<div class="grey row"></div>
-					<div class="darkgrey row"></div>
-					<div class="black row"></div>
-				</div>
-			</div>
+						
+			{% for color in site.data.colors.colors %}
+				{% include colors/single-color.html        
+					hex=color.hex
+				%}       
+			{% endfor %}
+
 		</div>
 	</div>
 	<div class="row">
