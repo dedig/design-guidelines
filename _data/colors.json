@@ -1,0 +1,80 @@
+{
+    "colors": [
+        {
+            "name": "lightblue",
+            "hex": "2ba7e7"
+        },
+        {
+            "name": "blue",
+            "hex": "266ab8"
+        },
+        {
+            "name": "darkblue",
+            "hex": "1c4d83"
+        },
+        {
+            "name": "lightorange",
+            "hex": "f6a623"
+        },
+        {
+            "name": "orange",
+            "hex": "ed851c"
+        },
+        {
+            "name": "darkorange",
+            "hex": "e56618"
+        },
+        {
+            "name": "red",
+            "hex": "a51419"
+        },
+        {
+            "name": "purple",
+            "hex": "874691"
+        },
+        {
+            "name": "lightpink",
+            "hex": "f6b0ca"
+        },
+        {
+            "name": "pink",
+            "hex": "ea4a8b"
+        },
+        {
+            "name": "green",
+            "hex": "4b9832"
+        },
+        {
+            "name": "darkgreen",
+            "hex": "15390d"
+        },
+        {
+            "name": "yellow",
+            "hex": "f0cd00"
+        },
+        {
+            "name": "lightyellow",
+            "hex": "ffffcc"
+        },
+        {
+            "name": "white",
+            "hex": "ffffff"
+        },
+        {
+            "name": "lightgrey",
+            "hex": "c0c0c0"
+        },
+        {
+            "name": "grey",
+            "hex": "727272"
+        },
+        {
+            "name": "darkgrey",
+            "hex": "434343"
+        },
+        {
+            "name": "black",
+            "hex": "000000"
+        }
+    ]
+}

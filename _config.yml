@@ -29,6 +29,7 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - color_converter
 exclude:
   - Gemfile
   - Gemfile.lock
