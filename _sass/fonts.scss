@@ -36,7 +36,7 @@ $open-sans: 'Open Sans', Helvetica, Arial, sans-serif;
 %h {
 	font-family: $varela-round;
 	font-weight: bold;
-	color: $blue;
+	color: $secondaryColor;
 }
 
 %a {
@@ -77,26 +77,26 @@ p, a, label {
 }
 
 a {
-	color: $orange;
+	color: $linkColor;
 	@extend %a;
 }
 	
 a:hover {
-	color: $lightorange;
+	color: $hoverColor;
 	@extend %a;
-	@include text-shadow($lightorange);
+	@include text-shadow($hoverColor);
 }
 
 a:focus {
-	color: $lightorange;
+	color: $focusColor;
 	@extend %a;
-	@include text-shadow($lightorange);
+	@include text-shadow($focusColor);
 }
 
 a:active {
-	color: $darkblue;
+	color: $activeColor;
 	@extend %a;
-	@include text-shadow($darkblue);
+	@include text-shadow($activeColor);
 }
 
-p, label { color: $grey; }
+p, label { color: $textColor; }

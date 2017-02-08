@@ -26,11 +26,11 @@
 .article__title {
 	text-align: left;
 	font-family: $nulshock-bold;
-	color: $orange;
+	color: $titleColor;
 }
 
 .article__subtitle {
-	border-bottom: solid 1px $blue;
+	border-bottom: solid 1px $secondaryColor;
 	height: auto;
 	margin-top: 20px;
 	margin-bottom: 30px;
@@ -67,7 +67,7 @@
 	margin-bottom: 30px;
 	padding-bottom: 30px;
 	@media only screen and (max-width: $screen-md-min) {
-		border-bottom: solid 1px $lightgrey;
+		border-bottom: solid 1px $borderColor;
 	}
 }
 

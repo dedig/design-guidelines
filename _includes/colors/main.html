@@ -15,7 +15,7 @@
 	<div class="article__subcontent" id="amostras">
 		<div class="row">
 						
-			{% for color in site.data.colors.colors %}
+			{% for color in site.data.style.colors %}
 				{% include colors/single-color.html        
 					hex=color.hex
 				%}       
@@ -31,30 +31,14 @@
 			</div>
 		</div>
 		<div class="article__subcontent" id="paletas-download">
+			{% for palette in site.data.style.downloads.palettes %}
 			<div class="col-sm-3">
-				<p>Baixar paleta de cores em RGB para o <i>Photoshop</i>.</p>
-				<a href="download/cores/dedig-rgb-photoshop.aco" download="Dedig - Paleta RGB para Photoshop.aco">
-					<button>RGB Photoshop</button>
+				<p>{{palette.description}}</p>
+				<a href="{{palette.link}}">
+					<button>{{palette.name}}</button>
 				</a>
 			</div>
-			<div class="col-sm-3">
-				<p>Baixar paleta de cores em CMYK para o <i>Photoshop</i>.</p>
-				<a href="download/cores/dedig-cmyk-photoshop.aco" download="Dedig - Paleta CMYK para Photoshop.aco">
-					<button>CMYK Photoshop</button>
-				</a>
-			</div>
-			<div class="col-sm-3">
-				<p>Baixar paleta de cores em RGB para o <i>Illustrator</i>.</p>
-				<a href="download/cores/dedig-rgb-illustrator.ase" download="Dedig - Paleta RGB para Illustrator.ase">
-					<button>RGB Illustrator</button>
-				</a>
-			</div>
-			<div class="col-sm-3">
-				<p>Baixar paleta de cores em CMYK para o <i>Illustrator</i>.</p>
-				<a href="download/cores/dedig-cmyk-illustrator.ase" download="Dedig - Paleta CMYK para Illustrator.ase">
-					<button>CMYK Illustrator</button>
-				</a>
-			</div>
+			{% endfor %}
 		</div>
 	</div>
 </article>

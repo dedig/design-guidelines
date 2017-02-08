@@ -80,11 +80,11 @@
 // CSS
 
 a {
-	@include btn($lightblue, $blue, $darkblue, $white, 20px, 5px);
+	@include btn($mainColor, $secondaryColor, $activeColor, $invertedTextColor, 20px, 5px);
 }
 
 form {
-	@include submit($lightblue, $blue, $darkblue, $white, 20px, 5px);
+	@include submit($mainColor, $secondaryColor, $activeColor, $invertedTextColor, 20px, 5px);
 }
 
 .quick-buttons {

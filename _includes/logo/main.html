@@ -13,30 +13,16 @@
 		</div>
 	</div>
 	<div class="article__subcontent" id="versoes">
-		<div class="row">
+		
+			{% for version in site.data.style.logo.versions %}
+			{{forloop%2}}
 			<div class="col-md-6">
-				<p class="article__txt--center"><strong>Versão com <i>byline</i></strong></p>
-				<img class="article__img--too-big" src="img/dedig-logo_rgb_byline.png">
-				<p class="article__txt--md-center">A versão com o <i>byline</i> é a preferencial, só deve ser substituída no caso das limitações descritas.</p>
+				<p class="article__txt--center"><strong>{{version.name}}</strong></p>
+				<img class="article__img--too-big" src="{{version.file}}">
+				<p class="article__txt--md-center">{{version.description}}</p>
 			</div>
-			<div class="col-md-6">
-				<p class="article__txt--center"><strong>Versão simplificada</strong></p>
-				<img class="article__img--too-big" src="img/dedig-logo_rgb.png">
-				<p class="article__txt--md-center">Usada em casos da leitura estar prejudicada. Como em dimensões reduzidas ou impressões com menor resolução.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<p class="article__txt--center"><strong>Versão de uma cor</strong></p>
-				<img class="article__img--too-big" src="img/dedig-logo_pb_byline.png">
-				<p class="article__txt--md-center">Para impressão em mídias limitadas a uma cor, caso não exista a limitação não usar essa versão.</p>
-			</div>
-			<div class="col-md-6">
-				<p class="article__txt--center"><strong>Versão <i>outline</i></strong></p>
-				<img class="article__img--too-big" src="img/dedig-logo_outline.png">
-				<p class="article__txt--md-center--last">Uso restrito para mídias onde o preenchimento deve ser evitado, caso não exista essa necessidade usar as outras versões.</p>
-			</div>
-		</div>
+			{% endfor %}
+		
 	</div>
 	<div class="row">
 		<div class="col-sm-12">
@@ -54,20 +40,11 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12" id="logo--fundos--corretos">
+				{% for background in site.data.style.backgrounds.acceptable %}
 				<div class="col-md-3 col-sm-6">
-					<div class="logo--fundos__bloco blue"></div>
-					<div class="logo--fundos__bloco white"></div>
+					<div class="logo--fundos__bloco {{background}}"></div>					
 				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="logo--fundos__bloco darkblue"></div>
-					<div class="logo--fundos__bloco darkgrey"></div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="logo--fundos__bloco black"></div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="logo--fundos__bloco lightyellow"></div>
-				</div>
+				{% endfor %}				
 			</div>
 		</div>
 		<div class="row">
@@ -77,24 +54,11 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12" id="logo--fundos--incorretos">
-				<div class="col-md-3 col-sm-6">
-					<div class="logo--fundos__bloco orange"></div>
-					<div class="logo--fundos__bloco darkorange"></div>
-					<div class="logo--fundos__bloco lightgrey"></div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="logo--fundos__bloco yellow"></div>
-					<div class="logo--fundos__bloco red"></div>
-					<div class="logo--fundos__bloco purple"></div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="logo--fundos__bloco lightblue"></div>
-					<div class="logo--fundos__bloco pink"></div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="logo--fundos__bloco lightorange"></div>
-					<div class="logo--fundos__bloco grey"></div>
-				</div>
+				{%for background in site.data.style.backgrounds.unnaceptable %}
+					<div class="col-md-3 col-sm-6">					
+							<div class="logo--fundos__bloco {{background}}"></div>
+					</div> 
+				{% endfor %}				
 			</div>
 		</div>
 	</div>
@@ -106,21 +70,27 @@
 			</div>
 		</div>
 		<div class="article__subcontent" id="especificacoes">
+
+			{% for spec in site.data.style.logo.specs %}
 			<div class="col-sm-4 logo--specs">
-				<p><strong>Tamanho mínimo com <i>byline</i></strong></p>
-				<div class="logo--specs--tamanho"><img src="img/dedig-logo_rgb_byline.png" class="logo--specs--tamanho__img--byline"></div>
-				<p>Impresso: 250 x 165 mm<br/>Digital: 120 x 80 px</p>
+				<p><strong>{{spec.name}}</strong></p>
+				{% if spec.type == "image" %}				
+					<img src="{{spec.file}}" class="logo--specs--margem--img"> 
+				{% else %}
+					<div class="logo--specs--tamanho">
+						<img src="{{spec.file}}"
+						{% if spec.type == "big" %}
+						class="logo--specs--tamanho__img--byline"
+						{% elsif spec.type == "small" %}
+						class="logo--specs--tamanho__img--simples"
+						{% endif %}
+						>
+					</div>
+				{% endif %}
+				<p>{{spec.description}}</p>
 			</div>
-			<div class="col-sm-4 logo--specs">
-				<p><strong>Tamanho mínimo sem <i>byline</i></strong></p>
-				<div class="logo--specs--tamanho"><img src="img/dedig-logo_rgb.png" class="logo--specs--tamanho__img--simples"></div>
-				<p>Impresso: 100 x 59 mm<br/>Digital: 35 x 21 px</p>
-			</div>
-			<div class="col-sm-4 logo--specs--last">
-				<p><strong>Medida para margem</strong></p>
-				<img src="img/dedig-logo_rgb_byline_margem.jpg" class="logo--specs--margem--img">
-				<p>A margem deve ter largura da primeira letra "D", a margem deve ter a mesma espessura horizontalmente e verticalmente.</p>
-			</div>
+			{% endfor %}
+
 		</div>
 	</div>
 	<div class="row">
@@ -133,12 +103,11 @@
 	</div>
 	<div class="article__subcontent" id="downloads-logo">
 		<div class="row">
-			<div class="col-sm-12"><p>Todas as versões do logo em diferentes extensões de arquivo:</p></div>
+			<div class="col-sm-12"><p>{{site.data.style.logo.downloadDescription}}</p></div>
 			<div class="col-sm-12">
-				<a href="download/logo/Dedig-logo-versoes-ai.zip" download="Dedig-logo-versoes-ai.zip"><button>Download <i>.ai</i></button></a>
-				<a href="download/logo/Dedig-logo-versoes-eps.zip" download="Dedig-logo-versoes-eps.zip"><button>Download <i>.eps</i></button></a>
-				<a href="download/logo/Dedig-logo-versoes-svg.zip" download="Dedig-logo-versoes-svg.zip"><button>Download <i>.svg</i></button></a>
-				<a href="download/logo/Dedig-logo-versoes-png-jpg-psd.zip" download="Dedig-logo-versoes-png-jpg-psd.zip"><button>Download <i>.png .jpg .psd</i></button></a>
+				{% for download in site.data.style.logo.downloadLinks %}
+					<a href="{{download.link}}"><button>Download <i>{{download.type}}</i></button></a>
+				{% endfor %}				
 			</div>
 		</div>
 	</div>

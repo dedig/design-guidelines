@@ -5,7 +5,7 @@
 
 .fontes {
 	@extend %fontes;
-	border-bottom: solid 1px $lightgrey;
+	border-bottom: solid 1px $borderColor;
 }
 
 .fontes--last {
@@ -13,7 +13,7 @@
 }
 
 %fontes__title {
-	color: $black;
+	color: $fontTitle;
 }
 
 .fontes__title--nulshock-bold {
