@@ -65,7 +65,7 @@
         {
             "name": "white",
             "hex": "ffffff",
-            "role": "invertedTextColor"
+            "role": ["invertedTextColor", "headerItem", "backgroundColor"]
         },
         {
             "name": "lightgrey",
@@ -75,7 +75,7 @@
         {
             "name": "grey",
             "hex": "727272",
-            "role": "textColor"
+            "role": ["textColor", "resetColor"]
         },
         {
             "name": "darkgrey",
@@ -196,6 +196,61 @@
         ]
     },
     "fonts": {
-
+        "local": [
+            {
+                "name": "Nulshock Bold",
+                "description": "Deve ser usada em títulos com destaque",
+                "author": "Raymond Larabie - Typodermic Fonts Inc. [<a href=\"download/fontes/nulshock-bold-nota-autor.txt\" target=\"_blank\">Nota do autor</a>]",
+                "license": "Typodermic Fonts Inc. EULA",
+                "licenseLink": "/download/fontes/typodermic-eula-02-2014.pdf",
+                "role": ["article-title"],
+                "file": [
+                    {
+                        "type": "woff2",
+                        "link": "/fonts/nulshock-bd.woff2"
+                    },
+                    {
+                        "type": "ttf",
+                        "link": "/download/fontes/nulshock bd.ttf"
+                    }
+                ]                
+            },
+            {
+                "name": "Varela Round",
+                "description": "Deve ser usada em subtítulos, e textos pequenos.",
+                "author": "<a href=\"https://plus.google.com/115540960342941034012/about\" target=\"_blank\">Joe Prince</a>",
+                "license": "SIL Open Font License, 1.1",
+                "licenseLink": "/download/fontes/varela-round-license.txt",
+                "role": ["mainFont"],
+                "file": [
+                    {
+                        "type": "woff2",
+                        "link": "/download/fontes/varela-round.woff2"
+                    },
+                    {
+                        "type": "ttf",
+                        "link": "download/fontes/VarelaRound-Regular.ttf"
+                    }
+                ]                
+            },
+            {
+                "name": "Open Sans",
+                "description": "Deve ser usada em parágrafos",
+                "author": "<a href=\"https://profiles.google.com/107777320916704234605/about\" target=\"_blank\">Steve Matteson</a>",
+                "license": "Apache License, version 2.0",
+                "licenseLink": "/download/fontes/open-sans-license.txt",
+                "role": ["paragraph"],
+                "file": [
+                    {
+                        "type": "woff2",
+                        "link": "/download/fontes/open-sans.woff2"
+                    },
+                    {
+                        "type": "ttf",
+                        "link": "/download/fontes/OpenSans-Regular.ttf"
+                    }
+                ]                
+            }
+        ]
     }
 }

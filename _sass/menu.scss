@@ -11,7 +11,7 @@
 // CSS
 
 .header {
-	background-color: $blue;
+	background-color: $secondaryColor;
 	padding: 10px;
 	position: fixed;
 	width: 100%;
@@ -42,11 +42,11 @@
 }
 
 .header__logo__txt {
-	color: $lightblue;
+	color: $mainColor;
 	padding: 20px;
 	float: left;
 	text-align: left;
-	font-family: $varela-round;
+	font-family: $mainFont;
 }
 
 .header__menu {
@@ -58,7 +58,7 @@
 }
 
 .header__menu__item {
-	color: $white;
+	color: $headerItem;
 	width: auto;
 	float: left;
 	padding: 20px;
@@ -76,21 +76,21 @@
 }
 
 .header__menu__item:hover {
-	color: $lightorange;
+	color: $hoverColor;
 	@extend %a;
-	@include text-shadow($lightorange);
+	@include text-shadow($hoverColor);
 }
 
 .header__menu__item:focus {
-	color: $lightorange;
+	color: $focusColor;
 	@extend %a;
-	@include text-shadow($lightorange);
+	@include text-shadow($focusColor);
 }
 
 .header__menu__item:active {
-	color: $darkblue;
+	color: $activeColor;
 	@extend %a;
-	@include text-shadow($darkblue);
+	@include text-shadow($activeColor);
 }
 
 .header__to-top {

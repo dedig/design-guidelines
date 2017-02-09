@@ -2,9 +2,8 @@
 ---
 
 {% include colors/colors.scss %}
-
 @import 'attr';
-@import 'fonts';
+{% include fonts/fonts.scss %}
 @import 'button';
 @import 'reset';
 @import 'menu';
@@ -13,5 +12,4 @@
 @import 'fontes';
 @import 'logo';
 @import 'gui';
-
 {% include colors/squares.scss %}

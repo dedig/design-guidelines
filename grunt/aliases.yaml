@@ -1,5 +1,0 @@
-default:
-  - 'sass'
-  - 'uglify'
-  - 'concat'
-  - 'watch'
