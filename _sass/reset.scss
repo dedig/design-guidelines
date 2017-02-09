@@ -1,0 +1,44 @@
+/* RESET */
+
+// PLACEHOLDERS
+
+%reset {
+	border: 0 none;
+	margin: 0;
+	color: $resetColor;
+	text-decoration: none;
+	list-style: none;
+}
+
+// CSS
+
+* {
+	@extend %reset;
+}
+
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	text-align: center;
+	background-color: $backgroundColor;
+	overflow-x: hidden;
+}
+
+a:hover, a:focus, a:active {
+	text-decoration: none;
+	outline: none;
+}
+
+nav {
+	display: inline-block;
+}
+
+pre {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 20px;
+}

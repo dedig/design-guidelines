@@ -1,0 +1,19 @@
+<div class="col-sm-12">
+    <div class="fontes">
+        <h1 class="fontes__title--{{include.name | slugify }}">{{include.name}}</h1>
+        <p>{{include.description}}</p>
+        <p>Autor: {{include.author}}</p>
+        <p>Licença: <a href="{{include.licenseLink}}" target="_blank">{{include.license}}</a></p>
+        <br><p>Usando como <strong>webfont</strong>:</p>
+        <pre class="fontes__webfont">            
+/* CSS - Usando font-face */
+@font-face { font-family: '{{include.name}}'; src: url('{{include.files[0].link}}') format('{{include.files[0].type}}'); }
+
+/* CSS */
+font-family: '{{include.name}}', Helvetica, Arial, sans-serif;"
+        </pre>
+        {% for file in include.files %}        
+            <a href="{{file.link}}"><button>Donwload <i>.{{file.type}}</i></button></a>
+        {% endfor %}
+    </div>        
+</div>

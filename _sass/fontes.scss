@@ -1,0 +1,32 @@
+%fontes {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+.fontes {
+	@extend %fontes;
+	border-bottom: solid 1px $borderColor;
+}
+
+.fontes--last {
+	@extend %fontes;
+}
+
+%fontes__title {
+	color: $fontTitle;
+}
+
+.fontes__title--nulshock-bold {
+	@extend %fontes__title;
+	font-family: $nulshock-bold;
+}
+
+.fontes__title--varela-round {
+	@extend %fontes__title;
+	font-family: $varela-round;
+}
+
+.fontes__title--open-sans {
+	@extend %fontes__title;
+	font-family: $open-sans;
+}

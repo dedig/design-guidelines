@@ -1,0 +1,27 @@
+<article id="article--fontes" class="article container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1 class="article__title">Fontes</h1>
+		</div>
+		<div class="col-sm-12 quick-buttons">
+		</div>
+		<div class="col-sm-12">
+			<div class="article__subtitle" id="familias_">
+				<h2 class="article__subtitle--txt">Famílias</h2>
+				<div class="article__subtitle--arrow" id="familias__arrow" onclick="showhide('familias')"></div>
+			</div>
+		</div>
+		<div class="article__subcontent" id="familias">		
+			{% for font in site.data.style.fonts.local %}
+				{% include fonts/font.html 
+					name = font.name
+					description = font.description
+					author = font.author
+					license = font.license
+					licenseLink = font.licenseLink
+					files = font.file
+				%}
+			{% endfor %}		
+		</div>
+	</div>
+</article>

@@ -1,0 +1,114 @@
+<article id="article--logo" class="article container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1 class="article__title">Logo</h1>
+		</div>
+		<div class="col-sm-12 quick-buttons">
+		</div>
+		<div class="col-sm-12">
+			<div class="article__subtitle" id="versoes_">
+				<h2 class="article__subtitle--txt">Versões</h2>
+				<div class="article__subtitle--arrow" id="versoes__arrow" onclick="showhide('versoes')"></div>
+			</div>
+		</div>
+	</div>
+	<div class="article__subcontent" id="versoes">
+		
+			{% for version in site.data.style.logo.versions %}
+			{{forloop%2}}
+			<div class="col-md-6">
+				<p class="article__txt--center"><strong>{{version.name}}</strong></p>
+				<img class="article__img--too-big" src="{{version.file}}">
+				<p class="article__txt--md-center">{{version.description}}</p>
+			</div>
+			{% endfor %}
+		
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="article__subtitle" id="fundos_">
+				<h2 class="article__subtitle--txt">Fundos</h2>
+				<div class="article__subtitle--arrow" id="fundos__arrow" onclick="showhide('fundos')"></div>
+			</div>
+		</div>
+	</div>
+	<div class="article__subcontent" id="fundos">
+		<div class="row">
+			<div class="col-sm-12">
+				<p><strong>Fundos aceitáveis</strong></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12" id="logo--fundos--corretos">
+				{% for background in site.data.style.backgrounds.acceptable %}
+				<div class="col-md-3 col-sm-6">
+					<div class="logo--fundos__bloco {{background}}"></div>					
+				</div>
+				{% endfor %}				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<p><strong>Fundos incompatíveis</strong></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12" id="logo--fundos--incorretos">
+				{%for background in site.data.style.backgrounds.unnaceptable %}
+					<div class="col-md-3 col-sm-6">					
+							<div class="logo--fundos__bloco {{background}}"></div>
+					</div> 
+				{% endfor %}				
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="article__subtitle" id="especificacoes_">
+				<h2 class="article__subtitle--txt">Especificações</h2>
+				<div class="article__subtitle--arrow" id="especificacoes__arrow" onclick="showhide('especificacoes')"></div>
+			</div>
+		</div>
+		<div class="article__subcontent" id="especificacoes">
+
+			{% for spec in site.data.style.logo.specs %}
+			<div class="col-sm-4 logo--specs">
+				<p><strong>{{spec.name}}</strong></p>
+				{% if spec.type == "image" %}				
+					<img src="{{spec.file}}" class="logo--specs--margem--img"> 
+				{% else %}
+					<div class="logo--specs--tamanho">
+						<img src="{{spec.file}}"
+						{% if spec.type == "big" %}
+						class="logo--specs--tamanho__img--byline"
+						{% elsif spec.type == "small" %}
+						class="logo--specs--tamanho__img--simples"
+						{% endif %}
+						>
+					</div>
+				{% endif %}
+				<p>{{spec.description}}</p>
+			</div>
+			{% endfor %}
+
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="article__subtitle" id="downloads-logo_">
+				<h2 class="article__subtitle--txt">Downloads do logo</h2>
+				<div class="article__subtitle--arrow" id="downloads-logo__arrow" onclick="showhide('downloads-logo')"></div>
+			</div>
+		</div>
+	</div>
+	<div class="article__subcontent" id="downloads-logo">
+		<div class="row">
+			<div class="col-sm-12"><p>{{site.data.style.logo.downloadDescription}}</p></div>
+			<div class="col-sm-12">
+				{% for download in site.data.style.logo.downloadLinks %}
+					<a href="{{download.link}}"><button>Download <i>{{download.type}}</i></button></a>
+				{% endfor %}				
+			</div>
+		</div>
+	</div>
+</article>

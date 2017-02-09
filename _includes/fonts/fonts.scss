@@ -1,0 +1,105 @@
+/* FONTS */
+
+{% for font in site.data.style.fonts.local %}
+@font-face { font-family: '{{font.name}}';
+  src: url('{{font.file[0].link}}') format('{{font.file[0].type}}');
+}
+${{font.name | slugify}}: '{{font.name}}', Helvetica, Arial, sans-serif;
+{% if font.role %}
+	{% for role in font.role %}
+		${{role}}: ${{font.name | slugify }};
+	{% endfor %}
+{% endif %}
+{% endfor %}
+
+
+// MIXINS
+
+@mixin text-shadow($color) { 
+	-moz-text-shadow: 0 0 5px $color;
+	-webkit-text-shadow: 0 0 5px $color;
+	text-shadow: 0 0 5px $color;
+}
+
+@mixin font__lg ($size-lg) {
+	font-size: $size-lg;
+}
+
+@mixin font__md__sm ($size-md, $size-sm) {
+	@media only screen and (max-width: $screen-md-min) {
+		font-size: $size-md;
+	}
+	@media only screen and (max-width: $screen-sm-min) {
+		font-size: $size-sm;
+	}
+}
+
+// PLACEHOLDERS
+
+%h {
+	font-family: $mainFont;
+	font-weight: bold;
+	color: $secondaryColor;
+}
+
+%a {
+	text-decoration: none;
+	outline: none;	
+}
+
+// CSS
+
+h1 {
+	@extend %h;
+	@include font__lg (3rem);
+	@include font__md__sm (3.25rem, 3.5rem);
+}
+
+h2, h2 i {
+	@extend %h;
+	@include font__lg (2.6rem);
+	@include font__md__sm (2.85rem, 3.1rem);
+}
+
+h3 {
+	@extend %h;
+	@include font__lg (2.3rem);
+	@include font__md__sm (2.5rem, 2.7rem);
+}
+
+h4 {
+	@extend %h;
+	@include font__lg (2rem);
+	@include font__md__sm (2.15rem, 2.3rem);
+}
+
+p, a, label {
+	font-family: $paragraph;
+	@include font__lg (2rem);
+	@include font__md__sm (2rem, 2rem);
+}
+
+a {
+	color: $linkColor;
+	@extend %a;
+}
+	
+a:hover {
+	color: $hoverColor;
+	@extend %a;
+	@include text-shadow($hoverColor);
+}
+
+a:focus {
+	color: $focusColor;
+	@extend %a;
+	@include text-shadow($focusColor);
+}
+
+a:active {
+	color: $activeColor;
+	@extend %a;
+	@include text-shadow($activeColor);
+}
+
+p, label { color: $textColor; }

@@ -1,0 +1,9 @@
+    <div class="col-md-4">
+        <div class="col-xs-2 {{color.name}}-square">
+        </div>
+        <p class="colors__txt col-xs-10">
+            #{{include.hex}}<br>
+            RGB: {{include.hex | rgb }}<br>
+            CMYK: {{include.hex | cmyk }}
+        </p>
+    </div>

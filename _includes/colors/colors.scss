@@ -1,0 +1,8 @@
+{% for color in site.data.style.colors %}
+    ${{color.name}}: #{{color.hex}};   
+    {% if color.role %}
+        {% for role in color.role %}
+            ${{role}}: ${{color.name}};
+        {% endfor %}
+    {% endif %}
+{% endfor %}
