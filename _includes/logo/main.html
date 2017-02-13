@@ -40,11 +40,16 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12" id="logo--fundos--corretos">
-				{% for background in site.data.style.backgrounds.acceptable %}
-				<div class="col-md-3 col-sm-6">
-					<div class="logo--fundos__bloco {{background}}"></div>					
-				</div>
-				{% endfor %}				
+				{% for background in site.data.style.backgrounds.acceptable %}				
+					{% for color in background.colors %}
+					<div class="col-md-3 col-sm-6">
+						<div class="logo--fundos__bloco {{color}}">
+							<img src='{{background.logo}}' class='logo--fundos__bloco--logo'>
+							<img src='/img/certo.png' class='logo--fundos__bloco--overlay'>
+						</div>										
+					</div>
+					{% endfor %}	
+				{% endfor %}	
 			</div>
 		</div>
 		<div class="row">
@@ -55,9 +60,14 @@
 		<div class="row">
 			<div class="col-sm-12" id="logo--fundos--incorretos">
 				{%for background in site.data.style.backgrounds.unnaceptable %}
-					<div class="col-md-3 col-sm-6">					
-							<div class="logo--fundos__bloco {{background}}"></div>
-					</div> 
+					{% for color in background.colors %}
+					<div class="col-md-3 col-sm-6">
+						<div class="logo--fundos__bloco {{color}}">
+							<img src='{{background.logo}}' class='logo--fundos__bloco--logo'>
+							<img src='/img/errado.png' class='logo--fundos__bloco--overlay'>
+						</div>										
+					</div>
+					{% endfor %}	
 				{% endfor %}				
 			</div>
 		</div>
@@ -106,7 +116,7 @@
 			<div class="col-sm-12"><p>{{site.data.style.logo.downloadDescription}}</p></div>
 			<div class="col-sm-12">
 				{% for download in site.data.style.logo.downloadLinks %}
-					<a href="{{download.link}}"><button>Download <i>{{download.type}}</i></button></a>
+					<a href="{{download.link}}"><button>Download versão <i>{{download.type}}</i></button></a>
 				{% endfor %}				
 			</div>
 		</div>

@@ -9,7 +9,7 @@
 @import 'menu';
 @import 'article';
 @import 'colors';
-@import 'fontes';
-@import 'logo';
+{% include fonts/fontes.scss %}
+{% include logo/logo.scss %}
 @import 'gui';
 {% include colors/squares.scss %}

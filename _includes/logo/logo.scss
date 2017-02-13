@@ -41,22 +41,9 @@
 }
 
 #logo--fundos--corretos, #logo--fundos--incorretos {
-	.lightblue { background-color: $lightblue; }
-	.blue { background-color: $blue; }
-	.darkblue { background-color: $darkblue; }
-	.lightorange { background-color: $lightorange; }
-	.orange { background-color: $orange; }
-	.darkorange { background-color: $darkorange; }
-	.red { background-color: $red; }
-	.purple { background-color: $purple; }
-	.pink { background-color: $pink; }
-	.yellow { background-color: $yellow; }
-	.lightyellow { background-color: $lightyellow; }
-	.white { background-color: $white; border: solid 2px #ddd; }
-	.lightgrey { background-color: $lightgrey; }
-	.grey { background-color: $grey; }
-	.darkgrey { background-color: $darkgrey; }
-	.black { background-color: $black; }
+	{% for color in site.data.style.colors %}
+	.{{color.name}} { background-color: ${{color.name}}; } 
+	{% endfor %}
 }
 
 .logo--specs, .logo--specs--last {
@@ -98,7 +85,6 @@
 	@extend %logo--specs--tamanho__img;
 	width: 120px;
 	margin-left: 23px;
-	margin-top: 15px;
 
 	@media only screen and (max-width: $screen-sm-min) {
 		margin-left: 5px;
