@@ -24,6 +24,9 @@
 			{% endfor %}
 		
 	</div>
+
+	
+
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="article__subtitle" id="fundos_">
@@ -32,6 +35,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<div class="article__subcontent" id="fundos">
 		<div class="row">
 			<div class="col-sm-12">
@@ -72,6 +76,8 @@
 			</div>
 		</div>
 	</div>
+	
+
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="article__subtitle" id="especificacoes_">
@@ -91,6 +97,8 @@
 						<img src="{{spec.file}}"
 						{% if spec.type == "big" %}
 						class="logo--specs--tamanho__img--byline"
+						{% elsif spec.type == "medium" %}
+						class="logo--specs--tamanho__img--medium"
 						{% elsif spec.type == "small" %}
 						class="logo--specs--tamanho__img--simples"
 						{% endif %}

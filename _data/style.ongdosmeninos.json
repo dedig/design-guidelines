@@ -1,0 +1,129 @@
+{
+    "brandName": "ONG Dos Meninos",
+    "colors": [
+        {"hex":"094566", "name":"azul-petroleo-escuro",
+        "role": ["fontTitle"]
+        },
+        {"hex":"3e4095", "name":"azul-mais-escuro",
+        "role": ["titleColor"]
+        },
+        {"hex":"3f8ab4", "name":"azul-escuro",
+         "role": ["mainColor", "secondaryColor"]
+        },
+
+        {"hex":"4390b6", "name":"azul-escuro-2",
+         "role": ["focusColor", "hoverColor"]
+        },
+
+        {"hex":"30e1ca", "name":"azul-medio",
+        "role": ["activeColor"]
+        },
+        {"hex":"b6e8ff", "name":"azul",
+        "role": ["borderColor", "headerItem", "invertedTextColor"]
+        },
+        {"hex":"4c0000", "name":"azul-claro",
+        "role": ["textColor", "linkColor", "resetColor"]
+        },
+        {"hex":"005447", "name":"verde-mais-escuro"},
+        {"hex":"4c623d", "name":"verde-escuro"},
+        {"hex":"018b4e", "name":"verde"},
+        {"hex":"739f1e", "name":"verde-claro"},
+        {"hex":"ffc500", "name":"amarelo-escuro"},
+        {"hex":"fede58", "name":"amarelo"},
+        {"hex":"ffe1a2", "name":"amarelo-claro"},
+
+
+
+        {"hex":"de323a", "name":"vermelho",
+        "role": []
+        
+        },
+
+
+
+
+        {"hex":"d43a83", "name":"rosa"},
+        {"hex":"cf5300", "name":"laranja"},
+        {"hex":"ff8844", "name":"laranja-claro"},
+        {"hex":"30bbca", "name":"marrom-mais-escuro"},
+        {"hex":"652800", "name":"marrom-escuro"},
+        {"hex":"6d3808", "name":"marrom"},
+        {"hex":"a44400", "name":"marrom-claro"},
+        {"hex":"8d5800", "name":"bege"},
+        {"hex":"ffffff", "name":"branco", "role": "backgroundColor"},
+        {"hex":"434343", "name":"cinza-escuro"},
+        {"hex":"727272", "name":"cinza"},
+        {"hex":"c0c0c0", "name":"cinza-claro"},
+        {"hex":"000000", "name":"preto"}
+    ],
+    "downloads": {
+        "palettes": [
+            {
+            "name": "RGB Photoshop",
+            "description": "Baixar paleta de cores em RGB para o <i>Photoshop</i>",
+            "link": "/download/cores/Paleta_ONG.aco"
+            }
+        ]
+    },
+    "backgrounds": {        
+        "acceptable": [
+            {
+                "logo": "/img/logo.png",
+                "colors": ["white", "lightgrey"]
+            }
+        ]
+    },
+    "logo": {   
+        "main": "/img/logo.png",
+        "versions": [
+            {
+                "name": "Principal",
+                "file": "/img/logo.png",
+                "description": "Esta versão deve ser usada em todos os casos"
+            }
+        ],
+        "downloadDescription": "Todas as versões do logo em diferentes extensões de arquivo:",
+        "downloadLinks": [
+            {
+                "type": "Principal",
+                "link": "/download/logo/logo-ong-grande.png"
+            }
+        ],
+        "specs": [
+            {
+                "name": "Tamanho mínimo",
+                "file": "/img/logo.png",                
+                "type": "medium",
+                "description": "Impresso: 2cm x 2,2cm<br/>Digital: 81 x 89px"
+            },
+            {
+                "name": "Medida para Margem",
+                "file": "/img/margem-de-seg.png",
+                "type": "image",
+                "description": "A margem deve ter largura da primeira Letra 'O', a margem deve ter a mesma espessura horizontalmente e verticalmente"
+            }
+        ]
+    },
+    "fonts": {
+        "local": [
+            {
+                "name": "Open Sans",
+                "description": "Deve ser usada em parágrafos",
+                "author": "<a href=\"https://profiles.google.com/107777320916704234605/about\" target=\"_blank\">Steve Matteson</a>",
+                "license": "Apache License, version 2.0",
+                "licenseLink": "/download/fontes/open-sans-license.txt",
+                "role": ["mainFont", "article-title", "paragraph"],
+                "file": [
+                    {
+                        "type": "woff2",
+                        "link": "/download/fontes/open-sans.woff2"
+                    },
+                    {
+                        "type": "ttf",
+                        "link": "/download/fontes/OpenSans-Regular.ttf"
+                    }
+                ]                
+            }
+        ]
+    }
+}

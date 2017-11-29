@@ -1,245 +1,105 @@
 {
-    "brandName": "Dedig",
+    "brandName": "Nova Equilíbrio Contábil",
     "colors": [
-        {
-            "name": "lightblue",
-            "hex": "2ba7e7",
-            "role": "mainColor"
+
+        
+        
+        {"hex": "003e56", "name": "azul-mais-do-que-escuro", "role": "titleColor"
         },
-        {
-            "name": "blue",
-            "hex": "266ab8",
-            "role": "secondaryColor"
+        {"hex": "00669c", "name": "azul-escuro", "role": ["secondaryColor", "fontTitle"] 
         },
-        {
-            "name": "darkblue",
-            "hex": "1c4d83",
-            "role": "activeColor"
+        {"hex": "008dce", "name": "azul", "role": ["mainColor", "focusColor", "hoverColor"]
         },
-        {
-            "name": "lightorange",
-            "hex": "f6a623",
-            "role": ["hoverColor", "focusColor"]
+        {"hex": "85bad1", "name": "azul-claro", "role": ["activeColor", "borderColor"]
         },
-        {
-            "name": "orange",
-            "hex": "ed851c",
-            "role": ["linkColor", "titleColor"]
-        },
-        {
-            "name": "darkorange",
-            "hex": "e56618"
-        },
-        {
-            "name": "red",
-            "hex": "a51419"
-        },
-        {
-            "name": "purple",
-            "hex": "874691"
-        },
-        {
-            "name": "lightpink",
-            "hex": "f6b0ca"
-        },
-        {
-            "name": "pink",
-            "hex": "ea4a8b"
-        },
-        {
-            "name": "green",
-            "hex": "4b9832"
-        },
-        {
-            "name": "darkgreen",
-            "hex": "15390d"
-        },
-        {
-            "name": "yellow",
-            "hex": "f0cd00"
-        },
-        {
-            "name": "lightyellow",
-            "hex": "ffffcc"
-        },
-        {
-            "name": "white",
-            "hex": "ffffff",
-            "role": ["invertedTextColor", "headerItem", "backgroundColor"]
-        },
-        {
-            "name": "lightgrey",
-            "hex": "c0c0c0",
-            "role": "borderColor"
-        },
-        {
-            "name": "grey",
-            "hex": "727272",
-            "role": ["textColor", "resetColor"]
-        },
-        {
-            "name": "darkgrey",
-            "hex": "434343"
-        },
-        {
-            "name": "black",
-            "hex": "000000",
-            "role": "fontTitle"
-        }
+
+        {"hex":"ffffff", "name":"branco", "role": ["headerItem", "invertedTextColor", "backgroundColor"]},
+        {"hex":"434343", "name":"cinza-escuro"},
+        {"hex":"727272", "name":"cinza"},
+        {"hex":"c0c0c0", "name":"cinza-claro"},
+        {"hex":"000000", "name":"preto", "role": ["textColor", "linkColor", "resetColor"]}
+
     ],
     "downloads": {
         "palettes": [
             {
             "name": "RGB Photoshop",
-            "description": "Baixar paleta de cores em RGB para o <i>Photoshop</i>.",
-            "link": "/download/cores/dedig-rgb-photoshop.aco"
-            },
-            {
-            "name": "CMYK Photoshop",
-            "description": "Baixar paleta de cores em CMYK para o <i>Photoshop</i>.",
-            "link": "/download/cores/dedig-cmyk-photoshop.aco"
-            },
-            {
-            "name": "RGB Illustrator",
-            "description": "Baixar paleta de cores em RGB para o <i>Illustrator</i>.",
-            "link": "/download/cores/dedig-rgb-illustrator.ase"
-            },
-            {
-            "name": "CMYK Illustrator",
-            "description": "Baixar paleta de cores em CMYK para o <i>Illustrator</i>.",
-            "link": "/download/cores/dedig-cmyk-illustrator.ase"
+            "description": "Baixar paleta de cores em RGB para o <i>Photoshop</i>",
+            "link": "/download/cores/Paleta_ONG.aco"
             }
         ]
     },
-    "backgrounds": {
+    "backgrounds": {        
         "acceptable": [
-            "blue",
-            "white",
-            "darkblue",
-            "darkgrey",
-            "black",
-            "lightyellow"
+            {
+                "logo": "/img/logo.png",
+                "colors": ["azul-escuro", "preto", "azul-claro", "azul", "azul-mais-do-que-escuro",  "cinza-escuro", "cinza"]
+            },
+            {
+                "logo": "/img/logo-preto.png",
+                "colors": ["branco", "cinza-claro"]
+            }
         ],
-        "unnaceptable": [ 
-            "orange",
-            "darkorange",
-            "lightgrey",
-            "yellow",
-            "red",            
-            "purple",
-            "lightblue",
-            "pink",
-            "lightorange",
-            "grey"
+        "unnaceptable": [
+            {
+                "logo": "/img/logo.png",
+                "colors": ["branco", "cinza-claro"]
+            },
+            {
+                "logo": "/img/logo-preto.png",
+                "colors": ["azul-escuro", "preto", "azul-claro", "azul", "azul-mais-do-que-escuro",  "cinza-escuro", "cinza"]
+            }
         ]
     },
     "logo": {   
+        "main": "/img/logo.png",
         "versions": [
             {
-                "name": "Versão com byline",
-                "file": "/img/dedig-logo_rgb_byline.png",
-                "description": "A versão com o byline é a preferencial, só deve ser substituída no caso das limitações descritas."
+                "name": "Para fundos claros",
+                "file": "/img/logo-preto.png",
+                "description": "Esta versão deve ser usada em todos os casos onde o fundo é claro"
             },
             {
-                "name": "Versão simplificada",
-                "file": "/img/dedig-logo_rgb.png",
-                "description": "Usada em casos da leitura estar prejudicada. Como em dimensões reduzidas ou impressões com menor resolução."
-            },
-            {
-                "name": "Versão de uma cor",
-                "file": "/img/dedig-logo_pb_byline.png",
-                "description": "Para impressão em mídias limitadas a uma cor, caso não exista a limitação não usar essa versão."
-            },
-            {
-                "name": "Versão outline",
-                "file": "/img/dedig-logo_outline.png",
-                "description": "Uso restrito para mídias onde o preenchimento deve ser evitado, caso não exista essa necessidade usar as outras versões."
+                "name": "Para fundos escuros",
+                "file": "/img/logo-fundo-escuro-01.jpg",
+                "description": "Esta versão deve ser usada em todos os casos onde o fundo é escuro"
             }
         ],
         "downloadDescription": "Todas as versões do logo em diferentes extensões de arquivo:",
         "downloadLinks": [
             {
-                "type": ".ai",
-                "link": "/download/logo/Dedig-logo-versoes-ai.zip"
+                "type": "para fundos claros",
+                "link": "/download/logo/logo-fundo-claro.rar"
             },
             {
-                "type": ".eps",
-                "link": "/download/logo/Dedig-logo-versoes-eps.zip"
-            },
-            {
-                "type": ".svg",
-                "link": "/download/logo/Dedig-logo-versoes-svg.zip"
-            },
-            {
-                "type": ".png .jpg .psd",
-                "link": "/download/logo/Dedig-logo-versoes-png-jpg-psd.zip"
+                "type": "para fundos escuros",
+                "link": "/download/logo/logo-fundo-escuro.rar"
             }
         ],
         "specs": [
             {
-                "name": "Tamanho mínimo com <i>byline</i>",
-                "file": "/img/dedig-logo_rgb_byline.png",                
+                "name": "Tamanho",
+                "file": "/img/logo-preto.png",                
                 "type": "big",
-                "description": "Impresso: 250 x 165 mm<br/>Digital: 120 x 80 px"
-            }, {
-                "name": "Tamanho mínimo sem <i>byline</i>",
-                "file": "/img/dedig-logo_rgb.png",
-                "type": "small",
-                "description": "Impresso: 100 x 59 mm<br/>Digital: 35 x 21 px"
-            }, 
+                "description": "Impresso: 3,3cm x 1,17cm<br/>Digital: 332px x 118px"
+            },
             {
-                "name": "Medida para margem",
-                "file": "/img/dedig-logo_rgb_byline_margem.jpg",
+                "name": "Medida para Margem",
+                "file": "/img/margem-de-seg.png",
                 "type": "image",
-                "description": "A margem deve ter largura da primeira letra 'D', a margem deve ter a mesma espessura horizontalmente e verticalmente."
+                "description": "A margem deve ter largura da primeira Letra 'E', a margem deve ter a mesma espessura horizontalmente e verticalmente"
             }
         ]
     },
     "fonts": {
         "local": [
             {
-                "name": "Nulshock Bold",
-                "description": "Deve ser usada em títulos com destaque",
-                "author": "Raymond Larabie - Typodermic Fonts Inc. [<a href=\"download/fontes/nulshock-bold-nota-autor.txt\" target=\"_blank\">Nota do autor</a>]",
-                "license": "Typodermic Fonts Inc. EULA",
-                "licenseLink": "/download/fontes/typodermic-eula-02-2014.pdf",
-                "role": ["article-title"],
-                "file": [
-                    {
-                        "type": "woff2",
-                        "link": "/fonts/nulshock-bd.woff2"
-                    },
-                    {
-                        "type": "ttf",
-                        "link": "/download/fontes/nulshock bd.ttf"
-                    }
-                ]                
-            },
-            {
-                "name": "Varela Round",
-                "description": "Deve ser usada em subtítulos, e textos pequenos.",
-                "author": "<a href=\"https://plus.google.com/115540960342941034012/about\" target=\"_blank\">Joe Prince</a>",
-                "license": "SIL Open Font License, 1.1",
-                "licenseLink": "/download/fontes/varela-round-license.txt",
-                "role": ["mainFont"],
-                "file": [
-                    {
-                        "type": "woff2",
-                        "link": "/download/fontes/varela-round.woff2"
-                    },
-                    {
-                        "type": "ttf",
-                        "link": "download/fontes/VarelaRound-Regular.ttf"
-                    }
-                ]                
-            },
-            {
                 "name": "Open Sans",
                 "description": "Deve ser usada em parágrafos",
                 "author": "<a href=\"https://profiles.google.com/107777320916704234605/about\" target=\"_blank\">Steve Matteson</a>",
                 "license": "Apache License, version 2.0",
                 "licenseLink": "/download/fontes/open-sans-license.txt",
-                "role": ["paragraph"],
+                "role": ["mainFont", "article-title", "paragraph"],
                 "file": [
                     {
                         "type": "woff2",

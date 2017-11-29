@@ -1,0 +1,172 @@
+{
+    "brandName": "FRK",
+    "colors": [
+        {
+            "name": "darkestblue",
+            "hex": "183277",
+            "role": ["fontTitle"]
+        },
+        {
+            "name": "darkblue",
+            "hex": "184393",
+            "role": ["titleColor", "secondaryColor"]
+        },
+        {
+            "name": "blue",
+            "hex": "3774de",
+            "role": ["mainColor"]
+        },
+        {
+            "name": "lightblue",
+            "hex": "5791f5",
+            "role": ["invertedTextColor", "focusColor", "hoverColor"]
+        },
+        {
+            "name": "bluepetroleum",
+            "hex": "91cfdd"
+        },
+        {
+            "name": "red",
+            "hex": "e20d17",
+            "role": []
+        },
+        {
+            "name": "white",
+            "hex": "ffffff",
+            "role": ["backgroundColor", "activeColor", "headerItem"]
+        },
+        {
+            "name": "lightgrey",
+            "hex": "c0c0c0",
+            "role": []
+        },
+        {
+            "name": "darkgrey",
+            "hex": "727272"
+        },
+        {
+            "name": "darkestgrey",
+            "hex": "434343",
+            "role": ["borderColor"]
+        },
+        {
+            "name": "black",
+            "hex": "000000",
+            "role": ["textColor", "linkColor", "resetColor"]
+        }
+    ],
+    "downloads": {
+        "palettes": [
+            {
+            "name": "RGB Photoshop",
+            "description": "Baixar paleta de cores em RGB para o <i>Photoshop</i>",
+            "link": "/download/cores/Paleta_FRK.aco"
+            }
+        ]
+    },
+    "backgrounds": {        
+        "acceptable": [
+            {
+                "logo": "/img/vertical-principal.png",
+                "colors": ["white", "lightgrey"]
+            },
+            {
+                "logo": "/img/escuro-transparente.png",
+                "colors": ["darkblue", "darkestgrey", "darkgrey", "black"]
+            }
+        ],
+        "unnaceptable": [ 
+            {
+                "logo": "/img/vertical-principal.png",
+                "colors": ["red", "bluepetroleum", "darkblue",  "lightblue"]
+            },
+            {
+                "logo": "/img/escuro-transparente.png",
+                "colors": ["white", "lightgrey"]
+            }
+        ]
+    },
+    "logo": {   
+        "main": "/img/escuro-transparente.png",
+        "versions": [
+            {
+                "name": "Vertical principal",
+                "file": "/img/vertical-principal.png",
+                "description": "A versão vertical deve ser usada de forma preferencial"
+            },
+            {
+                "name": "Vertical para fundos escuros",
+                "file": "/img/vertical-escuro.png",
+                "description": "A versão vertical para fundos escuros deve ser usada preferencialmente com fundos escuros"
+            },
+            {
+                "name": "Vertical monocromático",
+                "file": "/img/vertical-monocromatico.png",
+                "description": "A versão vertical monocromática deve ser usada preferencialmente em documentos p&b"
+            },
+            {
+                "name": "Horizontal principal",
+                "file": "/img/horizontal-principal.png",
+                "description": "A versão horizontal deve ser usada em áreas verticalmente estreitas"
+            },
+            {
+                "name": "Horizontal para fundos escuros",
+                "file": "/img/horizontal-escuro.png",
+                "description": "A versão horizontal para fundos escuros deve ser usada em áreas verticalmente estreitas, com fundos escuros"
+            },
+            {
+                "name": "Horizontal monocromático",
+                "file": "/img/horizontal-monocromatico.png",
+                "description": "A versão horizontal deve ser usada em áreas verticalmente estreitas, em documentos p&b"
+            }
+        ],
+        "downloadDescription": "Todas as versões do logo em diferentes extensões de arquivo:",
+        "downloadLinks": [
+            {
+                "type": "Horizontal",
+                "link": "/download/logo/horizontal.zip"
+            },
+            {
+                "type": "Vertical",
+                "link": "/download/logo/vertical.zip"
+            }
+        ],
+        "specs": [
+            {
+                "name": "Tamanho mínimo versão horizontal",
+                "file": "/img/horizontal-principal.png",                
+                "type": "big",
+                "description": "Impresso: 3,25cm x 1,87cm<br/>Digital: 92px x 53px"
+            }, {
+                "name": "Tamanho mínimo versão vertical",
+                "file": "/img/vertical-principal.png",
+                "type": "big",
+                "description": "Impresso: 3,67cm x 0,85cm<br/>Digital: 104px x 24px"
+            }, 
+            {
+                "name": "Medida para margem",
+                "file": "/img/margem-de-seg.png",
+                "type": "image",
+                "description": "A margem deve ter largura da primeira letra 'F', a margem deve ter a mesma espessura horizontalmente e verticalmente"
+            }
+        ]
+    },
+    "fonts": {
+        "local": [
+            {
+                "name": "Raleway",
+                "description": "Deve ser usada em todos os tipos de texto",
+                "author": "<a href=\"mailto:matt@pixelspread.com\" >Matt McInerney</a>, <a href=\"www.impallari.com\">Pablo Impallari</a>, <a href=\"www.rfuenzalida.com\">Rodrigo Fuenzalida</a>",
+                "license": "SIL Open Font License, 1.1",
+                "licenseLink": "/download/fontes/varela-round-license.txt",
+                "role": ["mainFont", "article-title", "paragraph"],
+                "file": [
+                    {
+                        "type": "woff",
+                        "link": "/fonts/raleway.woff"
+                    }
+                ]                
+            }
+        ]
+    }
+}

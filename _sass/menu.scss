@@ -37,7 +37,7 @@
 .header__logo__img {
 	float: left;
 	cursor: pointer;
-	width: 100px;
+	
 	height: auto;
 }
 
@@ -106,4 +106,8 @@
 		cursor:pointer;
 		z-index:1;
 	}
+}
+
+img.header__logo__img {
+	max-width: 250px;
 }
